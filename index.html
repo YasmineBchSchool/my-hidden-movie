@@ -3,85 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fallen Angels — Mijn Favoriete Film</title>
-
-  <!-- Sobere filmische fonts: titel = Cormorant Garamond, tekst/subtitles = Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+  <meta name="description" content="Fanpagina over de film Fallen Angels (1995) - een meesterwerk van Wong Kar-wai" />
+  <title>Fallen Angels — Fanpage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HERO met videoachtergrond (geen poster, geen foto) -->
-  <main class="hero" aria-label="Intro">
-    <video
-      class="hero__video"
-      src="videos/FallenAngels.mov"
-      autoplay
-      muted
-      loop
-      playsinline
-      aria-hidden="true">
-    </video>
+  <!-- HERO -->
+  <header class="hero" aria-label="Introductie">
+    <video class="hero-video" src="videos/FallenAngels.mov" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
-    <div class="hero__overlay" aria-hidden="true"></div>
-
-    <div class="hero__content">
-      <h1 class="t-display">Fallen Angels</h1>
-      <p class="t-sub">mijn favoriete film ooit</p>
-      <a href="#content" class="btn-ghost" aria-label="Ga naar de inhoud">Zie meer</a>
+    <div class="hero-content">
+      <h1 class="title">FALLEN ANGELS</h1>
+      <p class="subtitle">Mijn favoriete film ooit</p>
+      <a class="btn" href="#content">Ontdek de film</a>
     </div>
 
-    <a href="#content" class="scroll" aria-label="Scroll naar beneden">
-      <span class="scroll__dot"></span>
+    <a class="scroll" href="#content" aria-label="Scroll naar beneden">
+      <span class="scroll-dot"></span>
     </a>
-  </main>
+  </header>
 
   <!-- CONTENT -->
-  <section id="content" class="section">
+  <main id="content" class="section">
     <div class="container">
-      <header class="section__header">
-        <h2 class="t-h2">waarom ik deze film zo goed vind</h2>
-        <p class="t-body">
-          Fallen Angels uit 1995 is echt een geweldige film. Het gaat over mensen
-          die eenzaam zijn maar toch verbinding zoeken. De regisseur Wong Kar-Wai
-          maakt er iets heel moois van met een hypnotiserende sfeer.
-        </p>
-      </header>
+      <!-- zij-navigatie -->
+      <nav class="sidenav" aria-label="Navigatie">
+        <p class="sidenav-title">Inhoud</p>
+        <a class="sidenav-link" href="#waarom"><span class="dot"></span> Waarom zo goed</a>
+        <a class="sidenav-link" href="#bijzonder"><span class="dot"></span> Wat bijzonder is</a>
+        <a class="sidenav-link" href="#fotos"><span class="dot"></span> Foto's</a>
+        <a class="sidenav-link" href="#details"><span class="dot"></span> Filmdetails</a>
+      </nav>
 
-      <article class="article">
-        <h3 class="t-h3">wat maakt deze film bijzonder</h3>
-        <p class="t-body">
-          Je volgt verschillende mensen en hun verhalen komen op een onverwachte manier samen.
-          De cameravoering en het tempo voelen intiem en dromerig.
-        </p>
-        <p class="t-body">
-          Het speelt zich af in Hongkong; de stad ademt mee met de personages. Soms is het verwarrend,
-          maar juist dat maakt het gelaagd en mooi.
-        </p>
+      <!-- hoofdcontent -->
+      <div class="content">
+        <section id="waarom" class="card">
+          <h2 class="h2">Waarom ik deze film zo goed vind</h2>
+          <p class="text">
+            Fallen Angels (1995) voelt intens en toch stil. De beelden blijven hangen in zwart-wit contrasten.
+            Het gaat over mensen die alleen zijn maar toch iets zoeken. Dat raakt.
+          </p>
 
-        <div class="video-embed">
-          <h3 class="t-h3">bekijk de trailer</h3>
-          <iframe
-            src="https://www.youtube.com/embed/kP9TfCWaQT4"
-            title="Fallen Angels Trailer"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </article>
+          <div class="video-embed">
+            <h3 class="h3">Officiële trailer</h3>
+            <iframe
+              src="https://www.youtube.com/embed/uxaT19BlH0M"
+              title="Fallen Angels Trailer"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+
+          <a class="btn btn-small" href="#bijzonder">Volgende sectie</a>
+        </section>
+
+        <section id="bijzonder" class="card">
+          <h2 class="h2">Wat maakt deze film bijzonder</h2>
+          <p class="text">
+            Hongkong in de nacht: licht en schaduw. Soms snel, soms heel traag.
+            Voelt als een droom in zwart-wit. Juist die mix maakt het mooi.
+          </p>
+          
+          <a class="btn btn-small" href="#fotos">Bekijk foto's</a>
+        </section>
+        
+        <section id="fotos" class="card">
+          <h2 class="h2">Foto's uit de film</h2>
+          <p class="text">Enkele iconische beelden die de sfeer van Fallen Angels perfect weergeven.</p>
+          
+          <div class="gallery">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="images/foto1.png" alt="Fallen Angels scène 1" loading="lazy" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/foto2.png" alt="Fallen Angels scène 2" loading="lazy" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/foto3.png" alt="Fallen Angels scène 3" loading="lazy" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/foto4.png" alt="Fallen Angels scène 4" loading="lazy" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/foto5.png" alt="Fallen Angels scène 5" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          
+          <a class="btn btn-small" href="#details">Filmdetails</a>
+        </section>
+        
+        <section id="details" class="card">
+          <h2 class="h2">Filmdetails</h2>
+          <div class="details-grid">
+            <div class="detail-item">
+              <h3 class="h3">Regisseur</h3>
+              <p>Wong Kar-wai</p>
+            </div>
+            <div class="detail-item">
+              <h3 class="h3">Jaar</h3>
+              <p>1995</p>
+            </div>
+            <div class="detail-item">
+              <h3 class="h3">Duur</h3>
+              <p>99 minuten</p>
+            </div>
+            <div class="detail-item">
+              <h3 class="h3">Genre</h3>
+              <p>Drama, Romantiek, Crime</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-  </section>
+  </main>
 
   <footer class="footer" aria-label="Voettekst">
-    <p class="t-meta">&copy; 2024 — persoonlijke fanpage voor <em>Fallen Angels</em></p>
+    <p class="meta">© 2024 — Fanpage Fallen Angels. Deze site is een persoonlijk project en niet gelieerd aan de filmmakers.</p>
   </footer>
-
-  <script>
-    // Smooth scroll only als gebruiker geen reduced motion prefereert
-    (function(){
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if(!prefersReduced){ document.documentElement.style.scrollBehavior = 'smooth'; }
-    })();
-  </script>
 </body>
 </html>
